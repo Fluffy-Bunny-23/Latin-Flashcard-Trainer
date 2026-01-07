@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'A': 'Ā', 'E': 'Ē', 'I': 'Ī', 'O': 'Ō', 'U': 'Ū'
     };
 
+    const capitalToMacron = {
+        'A': 'ā', 'E': 'ē', 'I': 'ī', 'O': 'ō', 'U': 'ū'
+    };
+
     function addMacronSupport(inputElement) {
         inputElement.addEventListener('input', (e) => {
             let val = e.target.value;
@@ -55,12 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 val = val.replaceAll(`(${key})`, char);
             }
 
+            for (const [cap, macron] of Object.entries(capitalToMacron)) {
+                val = val.replaceAll(cap, macron);
+            }
+
             if (val !== original) {
                 const start = e.target.selectionStart;
-                const end = e.target.selectionEnd;
                 e.target.value = val;
-                // Adjust cursor position: replaced 3 chars `(a)` with 1 `ā`, so shift back 2
-                e.target.setSelectionRange(start - 2, end - 2);
+                
+                const lenDiff = original.length - val.length;
+                const newPos = Math.max(0, start - lenDiff);
+                e.target.setSelectionRange(newPos, newPos);
             }
         });
 
