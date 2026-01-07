@@ -1,8 +1,10 @@
 import json
 import re
+import os
 
-INPUT_FILE = 'words/words.txt'
-OUTPUT_FILE = 'words/words.json'
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+INPUT_FILE = os.path.join(SCRIPT_DIR, 'words.txt')
+OUTPUT_FILE = os.path.join(SCRIPT_DIR, 'words.json')
 
 def parse_line(line):
     # Normalize dash
@@ -85,8 +87,10 @@ def main():
         if line.upper().startswith("CHAPTER"):
             if current_chapter:
                 chapters.append(current_chapter)
+            chapter_title = re.sub(r'\bONE\b', '1', line, flags=re.IGNORECASE)
+            chapter_title = re.sub(r'\bVOCABULARY\b', '', chapter_title, flags=re.IGNORECASE).strip()
             current_chapter = {
-                "chapter": line,
+                "chapter": chapter_title,
                 "words": []
             }
             continue
