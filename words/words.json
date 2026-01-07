@@ -1,0 +1,2389 @@
+[
+    {
+        "chapter": "CHAPTER ONE VOCABULARY",
+        "words": [
+            {
+                "latin": "dormiō, dormīre, dormīvī, dormītum",
+                "translation": "to sleep",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "ego, meī",
+                "translation": "I",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "frāter, frātris",
+                "translation": "brother",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "hōra, hōrae",
+                "translation": "hour",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "in (+ accusative)",
+                "translation": "into, onto",
+                "pos": "preposition",
+                "gender": ""
+            },
+            {
+                "latin": "in (+ ablative)",
+                "translation": "in, on",
+                "pos": "preposition",
+                "gender": ""
+            },
+            {
+                "latin": "īnsula, īnsulae",
+                "translation": "island; apartment building",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "labōrō, labōrāre, labōrāvī, labōrātum",
+                "translation": "to work",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "legō, legere, lēgī, lēctum",
+                "translation": "to read",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "meus, mea, meum",
+                "translation": "my",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "nōn",
+                "translation": "not",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "pater, patris",
+                "translation": "father",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "rīdeō, rīdēre, rīsī, rīsum",
+                "translation": "to laugh, smile",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "servus, servī",
+                "translation": "slave, enslaved person (male)",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "tū, tuī",
+                "translation": "you (singular)",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "turba, turbae",
+                "translation": "crowd",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "ubi",
+                "translation": "where, when",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "via, viae",
+                "translation": "road, street, way",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "sum, esse, fuī, futūrum",
+                "translation": "to be",
+                "pos": "verb",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER TWO VOCABULARY",
+        "words": [
+            {
+                "latin": "cadō, cadere, cecidī, cāsum",
+                "translation": "to fall",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "cibus, cibī",
+                "translation": "food",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "dūcō, dūcere, dūxī, ductum",
+                "translation": "to lead, take",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "et",
+                "translation": "and",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "fīlia, fīliae",
+                "translation": "daughter",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "fīlius, fīliī",
+                "translation": "son",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "forum, forī",
+                "translation": "forum, marketplace",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "habeō, habēre, habuī, habitum",
+                "translation": "to have, hold",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "habitō, habitāre, habitāvī, habitātum",
+                "translation": "to live",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "intrō, intrāre, intrāvī, intrātum",
+                "translation": "to enter",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "magnus, magna, magnum",
+                "translation": "big, large, great",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "pecūnia, pecūniae",
+                "translation": "money, sum of money",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "quaerō, quaerere, quaesīvī, quaesītum",
+                "translation": "to search for, look for, ask",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "quoque",
+                "translation": "also, too",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "salūtō, salūtāre, salūtāvī, salūtātum",
+                "translation": "to greet",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sed",
+                "translation": "but",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "spectō, spectāre, spectāvī, spectātum",
+                "translation": "to look at, watch",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "videō, vidēre, vīdī, vīsum",
+                "translation": "to see",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "vīnum, vīnī",
+                "translation": "wine",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "vocō, vocāre, vocāvī, vocātum",
+                "translation": "to call",
+                "pos": "verb",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER THREE VOCABULARY",
+        "words": [
+            {
+                "latin": "ambulō, ambulāre, ambulāvī, ambulātum",
+                "translation": "to walk",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "amīcus, amīcī",
+                "translation": "friend",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "ancilla, ancillae",
+                "translation": "slave, enslaved person (female)",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "clāmō, clāmāre, clāmāvī, clāmātum",
+                "translation": "to shout",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "clāmor, clāmōris",
+                "translation": "shout, shouting, noise",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "cum",
+                "translation": "with",
+                "pos": "preposition, + abl.",
+                "gender": ""
+            },
+            {
+                "latin": "currō, currere, cucurrī, cursum",
+                "translation": "to run",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "dīcō, dīcere, dīxī, dictum",
+                "translation": "to say, speak, tell",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "equus, equī",
+                "translation": "horse",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "festīnō, festīnāre, festīnāvī, festīnātum",
+                "translation": "to hurry",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "gladius, gladiī",
+                "translation": "sword",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "īnfēlīx, īnfēlīcis",
+                "translation": "unlucky, unhappy",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "laetus, laeta, laetum",
+                "translation": "happy",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "multus, multa, multum",
+                "translation": "much, many",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "omnis, omne",
+                "translation": "all, every",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "per",
+                "translation": "through, along",
+                "pos": "preposition, +acc.",
+                "gender": ""
+            },
+            {
+                "latin": "prīmus, prīma, prīmum",
+                "translation": "first",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "senātor, senātōris",
+                "translation": "senator",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "urbs, urbis",
+                "translation": "city",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "vincō, vincere, vīcī, victum",
+                "translation": "to conquer, win, be victorious",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "-ō, -s, -t, -mus, -tis, -nt",
+                "translation": "Present Tense Chant",
+                "pos": "",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER FOUR VOCABULARY",
+        "words": [
+            {
+                "latin": "ad",
+                "translation": "to, towards, at",
+                "pos": "preposition, + acc.",
+                "gender": ""
+            },
+            {
+                "latin": "adsum, adesse, adfuī, adfutūrus",
+                "translation": "I am here, I am present",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "deus, deī",
+                "translation": "god",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "dominus, dominī",
+                "translation": "master",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "dōnum, dōnī",
+                "translation": "gift, present",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "laudō, laudāre, laudāvī, laudātum",
+                "translation": "to praise",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "nōs, nostrum",
+                "translation": "we, us",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "parvus, parva, parvum",
+                "translation": "small",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "perīculum, perīculī",
+                "translation": "danger",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "perterritus, perterrita, perterritum",
+                "translation": "terrified",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "puella, puellae",
+                "translation": "girl",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "quod",
+                "translation": "because",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "rēx, rēgis",
+                "translation": "king",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "Rōmānus, Rōmāna, Rōmānum",
+                "translation": "Roman",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "subitō",
+                "translation": "suddenly",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "templum, templī",
+                "translation": "temple",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "teneō, tenēre, tenuī, tentum",
+                "translation": "to hold, keep, possess",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "tollō, tollere, sustulī, sublātum",
+                "translation": "to raise, lift up, hold up",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "veniō, venīre, vēnī, ventum",
+                "translation": "to come",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "vōs, vestrum",
+                "translation": "you (plural)",
+                "pos": "pronoun",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER FIVE VOCABULARY",
+        "words": [
+            {
+                "latin": "aqua, aquae",
+                "translation": "water",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "audiō, audīre, audīvī, audītum",
+                "translation": "to hear, listen to",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "cupiō, cupere, cupīvī, cupītum",
+                "translation": "to want, desire",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "custōs, custōdis",
+                "translation": "guard",
+                "pos": "noun",
+                "gender": "m./f."
+            },
+            {
+                "latin": "dēbeō, dēbēre, dēbuī, dēbitum",
+                "translation": "to owe",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "dō, dare, dedī, datum",
+                "translation": "to give",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "effugiō, effugere, effūgī",
+                "translation": "to escape (no fourth principal part)",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "iuvenis, iuvenis",
+                "translation": "young person",
+                "pos": "noun",
+                "gender": "m./f."
+            },
+            {
+                "latin": "maneō, manēre, mānsī, mānsum",
+                "translation": "to remain, stay",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "nēmō, nēminis",
+                "translation": "no one, nobody",
+                "pos": "noun",
+                "gender": "m./f."
+            },
+            {
+                "latin": "nōlō, nōlle, nōluī",
+                "translation": "to not want, refuse (irregular verb, no fourth principal part)",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "nox, noctis",
+                "translation": "night",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "portō, portāre, portāvī, portātum",
+                "translation": "to carry, bear, take",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "possum, posse, potuī",
+                "translation": "to be able, can (irregular verb, no fourth principal part)",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "pulcher, pulchra, pulchrum",
+                "translation": "beautiful, handsome",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "respondeō, respondēre, respondī, respōnsum",
+                "translation": "to reply",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "taceō, tacēre, tacuī, tacitum",
+                "translation": "to be silent, be quiet",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "timeō, timēre, timuī",
+                "translation": "to fear, be afraid (no fourth principal part)",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "vēndō, vēndere, vēndidī, vēnditum",
+                "translation": "to sell",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "volō, velle, voluī",
+                "translation": "to want, wish (irregular verb, no fourth principal part)",
+                "pos": "verb",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER SIX VOCABULARY",
+        "words": [
+            {
+                "latin": "ā, ab",
+                "translation": "from, away from",
+                "pos": "preposition, + abl.",
+                "gender": ""
+            },
+            {
+                "latin": "capiō, capere, cēpī, captum",
+                "translation": "to take, catch, capture; adopt (a plan)",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "diēs, diēī",
+                "translation": "day",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "discēdō, discēdere, discessī, discessum",
+                "translation": "to depart, leave",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "ē, ex",
+                "translation": "from, out of",
+                "pos": "preposition, + abl.",
+                "gender": ""
+            },
+            {
+                "latin": "exspectō, exspectāre, exspectāvī, exspectātum",
+                "translation": "to wait for, expect",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "faciō, facere, fēcī, factum",
+                "translation": "to make, do",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "iam",
+                "translation": "now, already",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "in",
+                "translation": "into, onto",
+                "pos": "preposition, + acc.",
+                "gender": ""
+            },
+            {
+                "latin": "inquit",
+                "translation": "says (used in direct speech, no other forms)",
+                "pos": "verb, defective",
+                "gender": ""
+            },
+            {
+                "latin": "marītus, marītī",
+                "translation": "husband",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "māter, mātris",
+                "translation": "mother",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "prope",
+                "translation": "near",
+                "pos": "preposition, + acc.",
+                "gender": ""
+            },
+            {
+                "latin": "rogō, rogāre, rogāvī, rogātum",
+                "translation": "to ask, ask for",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sedeō, sedēre, sēdī, sessum",
+                "translation": "to sit",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "stō, stāre, stetī, statum",
+                "translation": "to stand",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "tōtus, tōta, tōtum",
+                "translation": "whole",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "trīstis, trīste",
+                "translation": "sad",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "tuus, tua, tuum",
+                "translation": "your (singular), yours",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "uxor, uxōris",
+                "translation": "wife",
+                "pos": "noun",
+                "gender": "f."
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER SEVEN VOCABULARY",
+        "words": [
+            {
+                "latin": "appropinquō, appropinquāre, appropinquāvī, appropinquātus",
+                "translation": "to approach, come near to",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "cūr?",
+                "translation": "why?",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "epistula, epistulae",
+                "translation": "letter",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "homō, hominis",
+                "translation": "man, person",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "ingēns, ingēns, ingēns",
+                "translation": "huge",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "īnsula, īnsulae",
+                "translation": "island; apartment building",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "mīles, mīlitis",
+                "translation": "soldier",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "minimē",
+                "translation": "no",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "nārrō, nārrāre, nārrāvī, nārrātus",
+                "translation": "to tell, relate",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "nauta, nautae",
+                "translation": "sailor",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "nunc",
+                "translation": "now",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "ōlim",
+                "translation": "once, some time ago",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "pars, partis",
+                "translation": "part",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "puer, puerī",
+                "translation": "boy",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "pugnō, pugnāre, pugnāvī, pugnātus",
+                "translation": "to fight",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "rēs, reī",
+                "translation": "thing, matter, story",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "saepe",
+                "translation": "often",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "silva, silvae",
+                "translation": "wood, forest",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "tum",
+                "translation": "then",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "vehementer",
+                "translation": "loudly, violently, strongly",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "-bam, -bās, -bat, -bāmus, -bātis, -bant",
+                "translation": "Imperfect Tense Chant",
+                "pos": "",
+                "gender": ""
+            },
+            {
+                "latin": "-ī, -istī, -it, -imus, -istis, -ērunt",
+                "translation": "Perfect Tense Chant",
+                "pos": "",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER EIGHT VOCABULARY",
+        "words": [
+            {
+                "latin": "agō, agere, ēgī, āctum",
+                "translation": "to do",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "bibō, bibere, bibī",
+                "translation": "to drink",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "cōnspiciō, cōnspicere, cōnspexī, cōnspectum",
+                "translation": "to catch sight of, notice",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "dē",
+                "translation": "from, down from; about",
+                "pos": "preposition, + abl.",
+                "gender": ""
+            },
+            {
+                "latin": "domus, domūs",
+                "translation": "house, home",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "eam",
+                "translation": "her; it (feminine)",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "eum",
+                "translation": "him; it (masculine)",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "gerō, gerere, gessī, gestum",
+                "translation": "to wear, wage (war)",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "iaceō, iacēre, iacuī",
+                "translation": "to lie down",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "incendō, incendere, incendī, incēnsum",
+                "translation": "to burn, set on fire",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "mox",
+                "translation": "soon",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "nihil",
+                "translation": "nothing (indeclinable)",
+                "pos": "noun",
+                "gender": ""
+            },
+            {
+                "latin": "noster, nostra, nostrum",
+                "translation": "our",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "porta, portae",
+                "translation": "gate",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "postquam",
+                "translation": "after",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "prōcēdō, prōcēdere, prōcessī, prōcessum",
+                "translation": "to go along, proceed",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "senex, senis",
+                "translation": "old person",
+                "pos": "noun",
+                "gender": "m./f."
+            },
+            {
+                "latin": "surgō, surgere, surrēxī, surrēctum",
+                "translation": "to get up",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "tandem",
+                "translation": "at last, finally",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "trāns",
+                "translation": "across",
+                "pos": "preposition, + acc.",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER NINE VOCABULARY",
+        "words": [
+            {
+                "latin": "adveniō, advenīre, advēnī, adventum",
+                "translation": "arrive",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "cīvis, cīvis",
+                "translation": "citizen",
+                "pos": "noun",
+                "gender": "m./f."
+            },
+            {
+                "latin": "difficilis, difficile",
+                "translation": "difficult",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "domina, dominae",
+                "translation": "mistress, lady",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "gravis, grave",
+                "translation": "heavy; serious",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "hostis, hostis",
+                "translation": "enemy",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "imperātor, imperātōris",
+                "translation": "emperor, general",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "īrātus, īrāta, īrātum",
+                "translation": "angry",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "iter, itineris",
+                "translation": "journey, route, way",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "lacrimō, lacrimāre, lacrimāvī, lacrimātum",
+                "translation": "cry, weep",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "līberī, līberōrum",
+                "translation": "children",
+                "pos": "noun",
+                "gender": "m. pl."
+            },
+            {
+                "latin": "medius, media, medium",
+                "translation": "middle, middle of",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "nūntius, nūntiī",
+                "translation": "messenger;  message, news",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "paucī, paucae, pauca",
+                "translation": "few, a few",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "petō, petere, petīvī, petītum",
+                "translation": "attack; seek, beg, ask for",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sanguis, sanguinis",
+                "translation": "blood",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "statim",
+                "translation": "immediately, at once",
+                "pos": "adv.",
+                "gender": ""
+            },
+            {
+                "latin": "trādō, trādere, trādidī, trāditum",
+                "translation": "hand over, hand down",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "vir, virī",
+                "translation": "man",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "vīta, vītae",
+                "translation": "life",
+                "pos": "noun",
+                "gender": "f."
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER TEN VOCABULARY",
+        "words": [
+            {
+                "latin": "accipiō, accipere, accēpī, acceptum",
+                "translation": "accept, take in, receive",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "alius, alia, aliud",
+                "translation": "another, other",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "annus, annī",
+                "translation": "year",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "bonus, bona, bonum",
+                "translation": "good",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "contrā + acc.",
+                "translation": "against",
+                "pos": "prep.",
+                "gender": ""
+            },
+            {
+                "latin": "dea, deae",
+                "translation": "goddess",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "deinde",
+                "translation": "then",
+                "pos": "adv.",
+                "gender": ""
+            },
+            {
+                "latin": "ferō, ferre, tulī, lātum",
+                "translation": "bring, carry, bear",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "fidēlis, fidēlis, fidēle",
+                "translation": "loyal, faithful, trustworthy",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "iaciō, iacere, iēcī, iactum",
+                "translation": "throw",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "locus, locī",
+                "translation": "place",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "miser, misera, miserum",
+                "translation": "poor, unfortunate",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "novus, nova, novum",
+                "translation": "new",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "nūllus, nūlla, nūllum",
+                "translation": "no, not any",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "occīdō, occīdere, occīdī, occīsum",
+                "translation": "kill",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "pāx, pācis",
+                "translation": "peace",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "pereō, perīre, periī, peritum",
+                "translation": "die, perish",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "quam … !",
+                "translation": "how … !",
+                "pos": "adv.",
+                "gender": ""
+            },
+            {
+                "latin": "sacer, sacra, sacrum",
+                "translation": "sacred, holy",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "sub (+ acc. or abl.)",
+                "translation": "under, below, beneath",
+                "pos": "prep.",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER ELEVEN VOCABULARY",
+        "words": [
+            {
+                "latin": "absum, abesse, āfuī",
+                "translation": "to be absent, be away, be distant",
+                "pos": "irregular verb",
+                "gender": ""
+            },
+            {
+                "latin": "accidō, accidere, accidī",
+                "translation": "to happen",
+                "pos": "3rd conjugation verb",
+                "gender": ""
+            },
+            {
+                "latin": "altus, alta, altum",
+                "translation": "high, deep",
+                "pos": "1st/2nd declension adjective",
+                "gender": ""
+            },
+            {
+                "latin": "bene",
+                "translation": "well",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "dux, ducis",
+                "translation": "leader, general",
+                "pos": "3rd declension noun",
+                "gender": "m."
+            },
+            {
+                "latin": "flūmen, flūminis",
+                "translation": "river",
+                "pos": "3rd declension noun",
+                "gender": "n."
+            },
+            {
+                "latin": "fortis, fortis, forte",
+                "translation": "brave, strong",
+                "pos": "3rd declension adjective",
+                "gender": ""
+            },
+            {
+                "latin": "frūstrā",
+                "translation": "in vain, without success",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "fugiō, fugere, fūgī",
+                "translation": "to flee, run away",
+                "pos": "3rd conjugation -io verb",
+                "gender": ""
+            },
+            {
+                "latin": "hodiē",
+                "translation": "today",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "ibi",
+                "translation": "there",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "inveniō, invenīre, invēnī, inventum",
+                "translation": "to find",
+                "pos": "4th conjugation verb",
+                "gender": ""
+            },
+            {
+                "latin": "itaque",
+                "translation": "and so, therefore",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "mare, maris",
+                "translation": "sea",
+                "pos": "3rd declension i-stem noun",
+                "gender": "n."
+            },
+            {
+                "latin": "nāvigō, nāvigāre, nāvigāvī, nāvigātum",
+                "translation": "to sail",
+                "pos": "1st conjugation verb",
+                "gender": ""
+            },
+            {
+                "latin": "nāvis, nāvis",
+                "translation": "ship",
+                "pos": "3rd declension i-stem noun",
+                "gender": "f."
+            },
+            {
+                "latin": "prō",
+                "translation": "in front of, for",
+                "pos": "preposition + ablative",
+                "gender": ""
+            },
+            {
+                "latin": "saevus, saeva, saevum",
+                "translation": "savage, cruel",
+                "pos": "1st/2nd declension adjective",
+                "gender": ""
+            },
+            {
+                "latin": "sōlus, sōla, sōlum",
+                "translation": "alone, only, lonely, on one’s own",
+                "pos": "1st/2nd declension adjective, irregular in gen/dat sg: sōlīus, sōlī",
+                "gender": ""
+            },
+            {
+                "latin": "ubi",
+                "translation": "where? where, when",
+                "pos": "adverb, conjunction",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER TWELVE",
+        "words": [
+            {
+                "latin": "caelum, caelī",
+                "translation": "sky, heaven",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "caput, capitis",
+                "translation": "head",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "corpus, corporis",
+                "translation": "body",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "crūdēlis, crūdēlis, crūdēle",
+                "translation": "cruel",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "dēleō, dēlēre, dēlēvī, dēlētum",
+                "translation": "to destroy",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "diū",
+                "translation": "for a long time",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "iānua, iānuae",
+                "translation": "door, doorway",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "iterum",
+                "translation": "again",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "mittō, mittere, mīsī, missus",
+                "translation": "to send",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "offerō, offerre, obtulī, oblātum",
+                "translation": "to offer",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "quis? quid?",
+                "translation": "who? what?",
+                "pos": "interrogative pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "redeō, redīre, rediī, reditum",
+                "translation": "to go back, come back, return",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "Rōma, Rōmae",
+                "translation": "Rome",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "servō, servāre, servāvī, servātum",
+                "translation": "to save, protect, keep, look after",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "stultus, stulta, stultum",
+                "translation": "stupid, foolish",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "superō, superāre, superāvī, superātum",
+                "translation": "to overcome, overpower",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "taberna, tabernae",
+                "translation": "shop, inn",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "terra, terrae",
+                "translation": "ground, land, earth",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "trahō, trahere, trāxī, tractus",
+                "translation": "to drag, draw, pull",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "vōx, vōcis",
+                "translation": "voice, shout",
+                "pos": "noun",
+                "gender": "f."
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER THIRTEEN VOCABULARY",
+        "words": [
+            {
+                "latin": "coepī, coepisse, coeptum",
+                "translation": "began",
+                "pos": "verb, defective",
+                "gender": ""
+            },
+            {
+                "latin": "cōnsūmō, cōnsūmere, cōnsūmpsī, cōnsūmptum",
+                "translation": "to consume, eat",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "intellegō, intellegere, intellēxī, intellēctum",
+                "translation": "to understand, realize",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "inter",
+                "translation": "among, between",
+                "pos": "preposition, + acc.",
+                "gender": ""
+            },
+            {
+                "latin": "ita vērō",
+                "translation": "yes, absolutely",
+                "pos": "adverbial phrase",
+                "gender": ""
+            },
+            {
+                "latin": "labor, labōris",
+                "translation": "work",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "longus, longa, longum",
+                "translation": "long",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "mūrus, mūrī",
+                "translation": "wall",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "nōmen, nōminis",
+                "translation": "name",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "parō, parāre, parāvī, parātum",
+                "translation": "to prepare",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "post",
+                "translation": "after, behind",
+                "pos": "preposition, + acc.",
+                "gender": ""
+            },
+            {
+                "latin": "praemium, praemiī",
+                "translation": "prize, reward, profit",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "quamquam",
+                "translation": "although",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "quī, quae, quod",
+                "translation": "who, which",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "quōmodo?",
+                "translation": "how? in what way?",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "semper",
+                "translation": "always",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "summus, summa, summum",
+                "translation": "highest, greatest, top (of)",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "suus, sua, suum",
+                "translation": "his, her, its, their (own)",
+                "pos": "possessive adjective",
+                "gender": ""
+            },
+            {
+                "latin": "tamen",
+                "translation": "however",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "vīvō, vīvere, vīxī, vīctum",
+                "translation": "to live, be alive",
+                "pos": "verb",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER FOURTEEN VOCABULARY",
+        "words": [
+            {
+                "latin": "amō, amāre, amāvī, amātum",
+                "translation": "to love, like",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "amor, amōris",
+                "translation": "love",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "cōgitō, cōgitāre, cōgitāvī, cōgitātum",
+                "translation": "to think, consider",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "cōnficiō, cōnficere, cōnfēcī, cōnfectum",
+                "translation": "to finish",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "cōnsilium, cōnsiliī",
+                "translation": "plan, idea, advice",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "cōnstituō, cōnstituere, cōnstituī, cōnstitūtum",
+                "translation": "to decide",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "dīrus, dīra, dīrum",
+                "translation": "dreadful",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "eōs",
+                "translation": "them (accusative plural masculine)",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "fēmina, fēminae",
+                "translation": "woman",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "mōns, montis",
+                "translation": "mountain",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "mors, mortis",
+                "translation": "death",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "nec",
+                "translation": "and not, nor, neither",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "nec ... nec ...",
+                "translation": "neither ... nor ...",
+                "pos": "correlative conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "necō, necāre, necāvī, necātum",
+                "translation": "to kill",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "nesciō, nescīre, nescīvī, nescītum",
+                "translation": "to not know",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "numquam",
+                "translation": "never",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "ostendō, ostendere, ostendī, ostentum",
+                "translation": "to show",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "tempus, temporis",
+                "translation": "time",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "terreō, terrēre, terruī, territum",
+                "translation": "to frighten",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "verbum, verbī",
+                "translation": "word",
+                "pos": "noun",
+                "gender": "n."
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER FIFTEEN VOCABULARY",
+        "words": [
+            {
+                "latin": "anteā",
+                "translation": "before",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "bellum, bellī",
+                "translation": "war",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "cēna, cēnae",
+                "translation": "dinner, meal",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "cēterī, cēterae, cētera",
+                "translation": "the rest, the others",
+                "pos": "adjective, plural",
+                "gender": ""
+            },
+            {
+                "latin": "cognōscō, cognōscere, cognōvī, cognitum",
+                "translation": "to get to know, find out, learn",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "comes, comitis",
+                "translation": "comrade, companion",
+                "pos": "noun",
+                "gender": "m./f."
+            },
+            {
+                "latin": "eō, īre, iī/īvī, ītum",
+                "translation": "to go",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "etiam",
+                "translation": "even, also",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "ferōx, ferōx, ferōcis",
+                "translation": "fierce, ferocious",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "hortus, hortī",
+                "translation": "garden",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "intereā",
+                "translation": "meanwhile",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "iubeō, iubēre, iussī, iussum",
+                "translation": "to order",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "lībertus, lībertī",
+                "translation": "freedman, former slave",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "multum",
+                "translation": "much",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "nōnne?",
+                "translation": "surely?",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "nūntiō, nūntiāre, nūntiāvī, nūntiātum",
+                "translation": "to announce, report",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "putō, putāre, putāvī, putātum",
+                "translation": "to think",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sē",
+                "translation": "himself, herself, itself, themselves",
+                "pos": "reflexive pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "simulatque",
+                "translation": "as soon as",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "vīlla, vīllae",
+                "translation": "country house, house",
+                "pos": "noun",
+                "gender": "f."
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER SIXTEEN VOCABULARY",
+        "words": [
+            {
+                "latin": "ac",
+                "translation": "and",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "auferō, auferre, abstulī, ablātum",
+                "translation": "to steal, carry off",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "brevis, brevis, breve",
+                "translation": "short, brief",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "cēlō, cēlāre, cēlāvī, cēlātum",
+                "translation": "to hide",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "hic, haec, hoc",
+                "translation": "this; he, she, it",
+                "pos": "demonstrative pronoun/adjective",
+                "gender": ""
+            },
+            {
+                "latin": "ille, illa, illud",
+                "translation": "that; he, she, it",
+                "pos": "demonstrative pronoun/adjective",
+                "gender": ""
+            },
+            {
+                "latin": "imperium, imperiī",
+                "translation": "empire; power; command",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "legō, legere, lēgī, lēctum",
+                "translation": "to read; to choose",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "lūx, lūcis",
+                "translation": "light, daylight",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "ōrō, ōrāre, ōrāvī, ōrātum",
+                "translation": "to beg, beg for",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "prīnceps, prīncipis",
+                "translation": "chief, emperor",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "quō?",
+                "translation": "where to?",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "rapiō, rapere, rapuī, raptum",
+                "translation": "to seize, grab",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "rēgīna, rēgīnae",
+                "translation": "queen",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "resistō, resistere, restitī",
+                "translation": "to resist",
+                "pos": "verb, + dat.",
+                "gender": ""
+            },
+            {
+                "latin": "reveniō, revenīre, revēnī, reventum",
+                "translation": "to come back, return",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sciō, scīre, scīvī, scītum",
+                "translation": "to know",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sentiō, sentīre, sēnsī, sēnsum",
+                "translation": "to feel, notice",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sī",
+                "translation": "if",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "sine",
+                "translation": "without",
+                "pos": "preposition, + abl.",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER SEVENTEEN VOCABULARY",
+        "words": [
+            {
+                "latin": "appāreō, appārēre, appāruī",
+                "translation": "to appear",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "benignus, benigna, benignum",
+                "translation": "kind, generous",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "dūrus, dūra, dūrum",
+                "translation": "hard, harsh",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "emō, emere, ēmī, ēmptus",
+                "translation": "to buy",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "et",
+                "translation": "even, also; and",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "hūc",
+                "translation": "here, to this place",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "igitur",
+                "translation": "therefore, and so",
+                "pos": "conjunction. adverb",
+                "gender": ""
+            },
+            {
+                "latin": "is, ea, id",
+                "translation": "this, that; he, she, it, them",
+                "pos": "pronoun",
+                "gender": ""
+            },
+            {
+                "latin": "lentus, lenta, lentum",
+                "translation": "slow",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "libenter",
+                "translation": "willingly, gladly",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "līberō, līberāre, līberāvī, līberātus",
+                "translation": "to free, set free",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "oppugnō, oppugnāre, oppugnāvī, oppugnātus",
+                "translation": "to attack",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "paene",
+                "translation": "almost, nearly",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "plēnus, plēna, plēnum",
+                "translation": "full",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "praebeō, praebēre, praebuī, praebitus",
+                "translation": "to provide",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "prō + abl.",
+                "translation": "for, in return for; in front of",
+                "pos": "preposition",
+                "gender": ""
+            },
+            {
+                "latin": "quam + superlative",
+                "translation": "as ... as possible",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "relinquō, relinquere, relīquī, relictus",
+                "translation": "to leave, leave behind",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sōl, sōlis",
+                "translation": "sun",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "unda, undae",
+                "translation": "wave",
+                "pos": "noun",
+                "gender": "f."
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER EIGHTEEN VOCABULARY",
+        "words": [
+            {
+                "latin": "abeō, abīre, abiī, abitum",
+                "translation": "to go away, depart",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "animus, animī",
+                "translation": "spirit, soul, mind",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "aut … aut …",
+                "translation": "either … or …",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "crēdō, crēdere, crēdidī, crēditum + dat.",
+                "translation": "to believe, trust, have faith in",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "eques, equitis",
+                "translation": "horseman; pl. = cavalry",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "exeō, exīre, exiī, exitum",
+                "translation": "to go out, come out of",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "fēlīx, fēlīcis",
+                "translation": "lucky, fortunate, happy",
+                "pos": "adj.",
+                "gender": ""
+            },
+            {
+                "latin": "heri",
+                "translation": "yesterday",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "legiō, legiōnis",
+                "translation": "legion",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "licet, licēre, licuit",
+                "translation": "it is allowed",
+                "pos": "one may (impersonal verb; no 4th part)",
+                "gender": ""
+            },
+            {
+                "latin": "malus, mala, malum",
+                "translation": "bad, evil",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "nam",
+                "translation": "for",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "necesse",
+                "translation": "necessary (indeclinable adjective; no other forms)",
+                "pos": "",
+                "gender": ""
+            },
+            {
+                "latin": "perveniō, pervenīre, pervēnī, perventum",
+                "translation": "to arrive, reach",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "placeō, placēre, placuī, placitum + dat.",
+                "translation": "to please",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "prōmittō, prōmittere, prōmīsī, prōmissus",
+                "translation": "to promise",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "quam",
+                "translation": "than; how ...? how ...!",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "scrībō, scrībere, scrīpsī, scrīptum",
+                "translation": "to write",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "umbra, umbrae",
+                "translation": "shadow, shade, ghost",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "vetus, veteris",
+                "translation": "old",
+                "pos": "adjective",
+                "gender": ""
+            }
+        ]
+    },
+    {
+        "chapter": "CHAPTER NINETEEN VOCABULARY",
+        "words": [
+            {
+                "latin": "adferō, adferre, attulī, adlātus",
+                "translation": "to bring",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "gerō, gerere, gessī, gestus",
+                "translation": "to wage (war); wear (clothes)",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "lacrima, lacrimae",
+                "translation": "tear",
+                "pos": "noun",
+                "gender": "f."
+            },
+            {
+                "latin": "lentē",
+                "translation": "slowly",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "maximus, maxima, maximum",
+                "translation": "very big, huge; biggest, greatest",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "melior, melior, melius",
+                "translation": "better",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "mortuus, mortua, mortuum",
+                "translation": "dead",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "multō",
+                "translation": "much, by much",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "neque",
+                "translation": "and not, nor, neither",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "neque … neque …",
+                "translation": "neither … nor …",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "oculus, oculī",
+                "translation": "eye",
+                "pos": "noun",
+                "gender": "m."
+            },
+            {
+                "latin": "optimus, optima, optimum",
+                "translation": "very good, excellent; best",
+                "pos": "adjective",
+                "gender": ""
+            },
+            {
+                "latin": "pōnō, pōnere, posuī, positus",
+                "translation": "to put, place, set up",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "referō, referre, rettulī, relātus",
+                "translation": "to bring back, carry back; report, tell",
+                "pos": "verb",
+                "gender": ""
+            },
+            {
+                "latin": "sīc",
+                "translation": "so, in this way",
+                "pos": "adverb",
+                "gender": ""
+            },
+            {
+                "latin": "sīcut",
+                "translation": "just as, like",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "ut",
+                "translation": "as",
+                "pos": "conjunction",
+                "gender": ""
+            },
+            {
+                "latin": "vestīmentum, vestīmentī",
+                "translation": "item of clothing, garment; pl. = clothes",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "vōtum, vōtī",
+                "translation": "prayer",
+                "pos": "noun",
+                "gender": "n."
+            },
+            {
+                "latin": "vulnus, vulneris",
+                "translation": "wound",
+                "pos": "noun",
+                "gender": "n."
+            }
+        ]
+    }
+]
