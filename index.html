@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin Flashcard Trainer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Latin Flashcard Trainer</h1>
+        
+        <div id="setup-area">
+            <p>Select a chapter to begin practicing your vocabulary.</p>
+            <div class="input-group" style="margin-bottom: 20px;">
+                <select id="chapter-select" style="width: 100%;">
+                    <option value="">-- Choose a Chapter --</option>
+                </select>
+            </div>
+            <button id="start-btn" style="width: 100%;">Start Quiz</button>
+        </div>
+
+        <div id="quiz-area" class="quiz-area hidden">
+            <div class="progress-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <div id="progress-text" style="margin-bottom: 10px; font-size: 0.9em; color: #666;"></div>
+
+            <div class="question-box">
+                <div style="font-size: 0.6em; text-transform: uppercase; color: #7f8c8d; margin-bottom: 5px;">Translate to Latin</div>
+                <span id="question-text">Loading...</span>
+            </div>
+
+            <div class="input-group">
+                <label>Latin Principal Parts:</label>
+                <div class="macron-buttons">
+                    <button class="macron-btn" tabindex="-1">ā</button>
+                    <button class="macron-btn" tabindex="-1">ē</button>
+                    <button class="macron-btn" tabindex="-1">ī</button>
+                    <button class="macron-btn" tabindex="-1">ō</button>
+                    <button class="macron-btn" tabindex="-1">ū</button>
+                </div>
+                <div id="latin-inputs-container"></div>
+                
+                <label for="gender-select" style="margin-top: 10px;">Gender:</label>
+                <select id="gender-select">
+                    <option value="">-- Select --</option>
+                    <option value="m.">Masculine (m.)</option>
+                    <option value="f.">Feminine (f.)</option>
+                    <option value="n.">Neuter (n.)</option>
+                    <option value="m./f.">M/F (m./f.)</option>
+                    <option value="none">N/A (None)</option>
+                </select>
+
+                <label for="pos-select">Part of Speech:</label>
+                <select id="pos-select">
+                    <option value="">-- Select --</option>
+                    <option value="noun">Noun</option>
+                    <option value="verb">Verb</option>
+                    <option value="adjective">Adjective</option>
+                    <option value="adverb">Adverb</option>
+                    <option value="preposition">Preposition</option>
+                    <option value="conjunction">Conjunction</option>
+                    <option value="pronoun">Pronoun</option>
+                </select>
+            </div>
+
+            <div class="controls" style="margin-top: 20px;">
+                <button id="check-btn" style="width: 100%;">Check Answer</button>
+                <button id="next-btn" style="display: none; width: 100%;">Next Word</button>
+            </div>
+
+            <div id="feedback-area" class="feedback">
+                <div id="feedback-message" style="font-weight: bold; font-size: 1.1em;"></div>
+                <div id="full-entry-display" class="full-entry"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Data first -->
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
