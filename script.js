@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inputElement.addEventListener('input', (e) => {
             let val = e.target.value;
             let original = val;
-            
+
             for (const [key, char] of Object.entries(vowels)) {
                 // replaceAll with string literal arguments does NOT use regex
                 // so we construct the literal string "(a)" to find and replace with "ā"
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (val !== original) {
                 const start = e.target.selectionStart;
                 e.target.value = val;
-                
+
                 const lenDiff = original.length - val.length;
                 const newPos = Math.max(0, start - lenDiff);
                 e.target.setSelectionRange(newPos, newPos);
@@ -88,14 +88,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         inputElement.addEventListener('focus', () => {
-            lastFocusedInput = inputElement;
+            if (document.contains(inputElement)) {
+                lastFocusedInput = inputElement;
+            }
         });
     }
 
     // Button Click
     document.querySelectorAll('.macron-btn').forEach(btn => {
         btn.addEventListener('click', () => {
-            if (!lastFocusedInput) return; // No input selected yet
+            if (!lastFocusedInput || !document.contains(lastFocusedInput)) {
+                lastFocusedInput = null;
+                return;
+            }
 
             const char = btn.textContent;
             const start = lastFocusedInput.selectionStart;
@@ -139,11 +144,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const word = currentChapterWords[currentIndex];
         questionText.textContent = word.translation;
-        
+
+        // Clear previous lastFocusedInput to prevent memory leaks
+        lastFocusedInput = null;
+
         // Generate inputs based on principal parts
         latinInputsContainer.innerHTML = '';
         const parts = word.latin.split(',').map(s => s.trim());
-        
+
         parts.forEach((part, index) => {
             const input = document.createElement('input');
             input.type = 'text';
@@ -152,10 +160,10 @@ document.addEventListener('DOMContentLoaded', () => {
             input.autocomplete = 'off';
             input.style.marginBottom = '5px';
             input.style.width = '100%';
-            
+
             addMacronSupport(input);
             latinInputsContainer.appendChild(input);
-            
+
             // Focus first input automatically
             if (index === 0) {
                 input.focus();
@@ -165,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         genderSelect.value = '';
         posSelect.value = '';
-        
+
         feedbackArea.style.display = 'none';
         feedbackArea.classList.remove('correct', 'incorrect');
         checkBtn.disabled = false;
@@ -286,13 +294,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function finishQuiz() {
+        // Clear lastFocusedInput to prevent memory leak
+        lastFocusedInput = null;
+
         // Hide game elements
         document.querySelector('.progress-container').style.display = 'none';
         document.getElementById('progress-text').style.display = 'none';
         document.querySelector('.question-box').style.display = 'none';
         document.querySelector('.input-group').style.display = 'none';
         document.querySelector('.controls').style.display = 'none';
-        
+
         // Explicitly hide feedback area
         feedbackArea.style.display = 'none';
 
