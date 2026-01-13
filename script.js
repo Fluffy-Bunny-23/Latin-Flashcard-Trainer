@@ -218,10 +218,25 @@ document.addEventListener('DOMContentLoaded', () => {
         const word = currentChapterWords[currentIndex];
         const userGender = genderSelect.value;
         const userPos = posSelect.value;
-        
+
+        // Validate that user has provided input
+        const userInputs = document.querySelectorAll('.latin-part-input');
+        let hasAnyInput = false;
+        userInputs.forEach(input => {
+            if (input.value.trim() !== '') {
+                hasAnyInput = true;
+            }
+        });
+
+        if (!hasAnyInput && userGender === '' && userPos === '') {
+            feedbackArea.style.display = 'block';
+            feedbackArea.classList.remove('correct', 'incorrect');
+            feedbackMessage.textContent = "Please enter at least one field before checking.";
+            return;
+        }
+
         // 1. Validate Latin Parts
         const targetParts = word.latin.split(',').map(s => s.trim().toLowerCase());
-        const userInputs = document.querySelectorAll('.latin-part-input');
         
         let allPartsCorrect = true;
         let incorrectIndices = [];
