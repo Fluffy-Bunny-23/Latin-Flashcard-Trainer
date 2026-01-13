@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inputElement.addEventListener('input', (e) => {
             let val = e.target.value;
             let original = val;
+            const start = e.target.selectionStart;
 
             for (const [key, char] of Object.entries(vowels)) {
                 // replaceAll with string literal arguments does NOT use regex
@@ -78,11 +79,43 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (val !== original) {
-                const start = e.target.selectionStart;
                 e.target.value = val;
 
-                const lenDiff = original.length - val.length;
-                const newPos = Math.max(0, start - lenDiff);
+                // Calculate cursor position more accurately by counting replacements before cursor
+                // This handles multiple replacements correctly
+                let newPos = start;
+                let offset = 0;
+
+                // Re-scan the original string to calculate position offset
+                for (const [key, char] of Object.entries(vowels)) {
+                    const pattern = `(${key})`;
+                    let searchIndex = 0;
+                    let match;
+                    while ((match = original.indexOf(pattern, searchIndex)) !== -1) {
+                        // Check if this match occurred before or at the cursor position
+                        if (match + pattern.length <= start) {
+                            // Calculate how many characters this replacement removes
+                            // "(a)" -> "ā" removes 2 characters
+                            offset += pattern.length - char.length;
+                        }
+                        searchIndex = match + pattern.length;
+                    }
+                }
+
+                for (const [cap, macron] of Object.entries(capitalToMacron)) {
+                    let searchIndex = 0;
+                    let match;
+                    while ((match = original.indexOf(cap, searchIndex)) !== -1) {
+                        if (match + cap.length <= start) {
+                            // Capital letter replacement: "A" -> "ā" removes 0 characters
+                            // But we still need to track position
+                            offset += cap.length - macron.length;
+                        }
+                        searchIndex = match + cap.length;
+                    }
+                }
+
+                newPos = Math.max(0, start - offset);
                 e.target.setSelectionRange(newPos, newPos);
             }
         });
