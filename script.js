@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 3. POS
         let targetPos = word.pos ? word.pos.trim().toLowerCase() : "";
-        
+
         // Detect if it's a Chant
         // Heuristic: Translation contains "Chant" OR latin starts with "-"
         if (word.translation.toLowerCase().includes('chant') || (targetPos === "" && word.latin.startsWith('-'))) {
@@ -233,22 +233,31 @@ document.addEventListener('DOMContentLoaded', () => {
         let isPosCorrect = false;
 
         if (userPos !== "") {
-             // Map full names to abbreviations common in the dataset
-             const aliases = {
-                 'adjective': ['adj'],
-                 'adverb': ['adv'],
-                 'preposition': ['prep'],
-                 'conjunction': ['conj'],
-             };
+            // Expand POS matching to handle variations like 'verb, defective', '3rd conjugation verb', etc.
+            const posVariations = {
+                'noun': ['noun'],
+                'verb': ['verb'],
+                'adjective': ['adjective', 'adj'],
+                'adverb': ['adverb', 'adv'],
+                'preposition': ['preposition', 'prep'],
+                'conjunction': ['conjunction', 'conj'],
+                'pronoun': ['pronoun'],
+                'interjection': ['interjection'],
+                'chant': ['chant']
+            };
 
-             let searchTerms = aliases[userPosValue] ? [userPosValue, ...aliases[userPosValue]] : [userPosValue];
-             
-             const pattern = `\\b(${searchTerms.join('|')})\\b`;
-             const regex = new RegExp(pattern, 'i');
-             
-             if (regex.test(targetPos)) {
-                 isPosCorrect = true;
-             }
+            // Get variations for the user's selection
+            const variations = posVariations[userPosValue] || [userPosValue];
+
+            // Try to match any variation as a whole word in targetPos
+            for (const variation of variations) {
+                const pattern = `\\b${variation}\\b`;
+                const regex = new RegExp(pattern, 'i');
+                if (regex.test(targetPos)) {
+                    isPosCorrect = true;
+                    break;
+                }
+            }
         }
 
         const isCorrect = allPartsCorrect && isGenderCorrect && isPosCorrect;
