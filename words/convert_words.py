@@ -1,6 +1,7 @@
 import json
 import re
 import os
+import sys
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 INPUT_FILE = os.path.join(SCRIPT_DIR, 'words.txt')
@@ -75,9 +76,25 @@ def parse_line(line):
 def main():
     chapters = []
     current_chapter = None
-    
-    with open(INPUT_FILE, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
+
+    # Check if input file exists
+    if not os.path.exists(INPUT_FILE):
+        print(f"Error: Input file '{INPUT_FILE}' not found.")
+        print(f"Please ensure the file exists in the words directory.")
+        sys.exit(1)
+
+    try:
+        with open(INPUT_FILE, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+    except IOError as e:
+        print(f"Error: Unable to read input file '{INPUT_FILE}'.")
+        print(f"Details: {e}")
+        sys.exit(1)
+    except UnicodeDecodeError as e:
+        print(f"Error: Unable to decode input file '{INPUT_FILE}'.")
+        print(f"Details: {e}")
+        print("Please ensure the file is UTF-8 encoded.")
+        sys.exit(1)
         
     for line in lines:
         line = line.strip()
@@ -137,18 +154,34 @@ def main():
             
     if current_chapter:
         chapters.append(current_chapter)
-        
-    with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
-        json.dump(chapters, f, indent=4, ensure_ascii=False)
-        
+    else:
+        print("Warning: No chapters found in the input file.")
+        return
+
+    try:
+        with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+            json.dump(chapters, f, indent=4, ensure_ascii=False)
+    except IOError as e:
+        print(f"Error: Unable to write output file '{OUTPUT_FILE}'.")
+        print(f"Details: {e}")
+        sys.exit(1)
+
     # Also create a compressed version
     compressed_file = os.path.join(SCRIPT_DIR, '..', 'data.js')
-    with open(compressed_file, 'w', encoding='utf-8') as f:
-        f.write('var wordsData = ')
-        json.dump(chapters, f, ensure_ascii=True)
-        f.write(';')
-        
-    print(f"Converted {len(chapters)} chapters.")
+    try:
+        with open(compressed_file, 'w', encoding='utf-8') as f:
+            f.write('var wordsData = ')
+            json.dump(chapters, f, ensure_ascii=True)
+            f.write(';')
+    except IOError as e:
+        print(f"Error: Unable to write compressed file '{compressed_file}'.")
+        print(f"Details: {e}")
+        sys.exit(1)
+
+    print(f"Successfully converted {len(chapters)} chapters.")
+    print(f"Output files created:")
+    print(f"  - {OUTPUT_FILE}")
+    print(f"  - {compressed_file}")
 
 if __name__ == "__main__":
     main()
