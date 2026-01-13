@@ -38,20 +38,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initialize Chapters
-    if (typeof wordsData !== 'undefined') {
-        if (Array.isArray(wordsData) && wordsData.length > 0) {
-            wordsData.forEach((chapter, index) => {
-                const option = document.createElement('option');
-                option.value = index;
-                option.textContent = chapter.chapter || `Chapter ${index + 1}`;
-                chapterSelect.appendChild(option);
-            });
-        } else {
-            console.error("wordsData is empty or not an array.");
-        }
-    } else {
-        console.error("wordsData is undefined. Check if data.js is loaded correctly.");
+    if (typeof wordsData === 'undefined' || !Array.isArray(wordsData) || wordsData.length === 0) {
+        console.error("wordsData is undefined, empty, or not an array. Check if data.js is loaded correctly.");
+        questionText.textContent = "Error: Failed to load vocabulary data. Please refresh the page.";
+        startBtn.disabled = true;
+        return;
     }
+
+    wordsData.forEach((chapter, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = chapter.chapter || `Chapter ${index + 1}`;
+        chapterSelect.appendChild(option);
+    });
 
     // Macron Helpers
     const vowels = {
@@ -110,7 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startBtn.addEventListener('click', () => {
         const chapterIndex = chapterSelect.value;
-        if (chapterIndex === "") return;
+        if (chapterIndex === "") {
+            alert("Please select a chapter before starting the quiz.");
+            return;
+        }
         
         currentChapterWords = [...wordsData[chapterIndex].words];
         currentChapterWords.sort(() => Math.random() - 0.5);
@@ -276,6 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function updateProgress() {
+        if (currentChapterWords.length === 0) return;
         const displayIndex = Math.min(currentIndex, currentChapterWords.length);
         const percent = (displayIndex / currentChapterWords.length) * 100;
         progressBar.style.width = `${percent}%`;
