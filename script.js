@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         results.innerHTML = `
             <h2>Quiz Complete!</h2>
-            <p>Your Score: ${score} / ${currentChapterWords.length}</p>
+            <p>Your Score: ${score} / ${currentChapterWords.length} (${Math.round((score / currentChapterWords.length) * 100)}%)</p>
             <div style="margin-top: 20px;">
                 <button id="retry-btn">Try Again</button>
                 <button id="back-to-menu-btn" style="margin-left: 10px; background-color: #7f8c8d;">Back to Menu</button>
