@@ -105,25 +105,32 @@ def main():
             if current_chapter:
                 chapters.append(current_chapter)
             chapter_title = re.sub(r'\bCHAPTER\b', 'Chapter', line, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bONE\b', '1', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bTWO\b', '2', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bTHREE\b', '3', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bFOUR\b', '4', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bFIVE\b', '5', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bSIX\b', '6', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bSEVEN\b', '7', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bEIGHT\b', '8', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bNINE\b', '9', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bTEN\b', '10', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bELEVEN\b', '11', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bTWELVE\b', '12', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bTHIRTEEN\b', '13', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bFOURTEEN\b', '14', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bFIFTEEN\b', '15', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bSIXTEEN\b', '16', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bSEVENTEEN\b', '17', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bEIGHTEEN\b', '18', chapter_title, flags=re.IGNORECASE)
-            chapter_title = re.sub(r'\bNINETEEN\b', '19', chapter_title, flags=re.IGNORECASE)
+
+            # Replace number words with digits using a dictionary
+            number_words = {
+                'ONE': '1',
+                'TWO': '2',
+                'THREE': '3',
+                'FOUR': '4',
+                'FIVE': '5',
+                'SIX': '6',
+                'SEVEN': '7',
+                'EIGHT': '8',
+                'NINE': '9',
+                'TEN': '10',
+                'ELEVEN': '11',
+                'TWELVE': '12',
+                'THIRTEEN': '13',
+                'FOURTEEN': '14',
+                'FIFTEEN': '15',
+                'SIXTEEN': '16',
+                'SEVENTEEN': '17',
+                'EIGHTEEN': '18',
+                'NINETEEN': '19'
+            }
+
+            for word, digit in number_words.items():
+                chapter_title = re.sub(rf'\b{word}\b', digit, chapter_title, flags=re.IGNORECASE)
             chapter_title = re.sub(r'\bVOCABULARY\b', '', chapter_title, flags=re.IGNORECASE).strip()
             current_chapter = {
                 "chapter": chapter_title,
