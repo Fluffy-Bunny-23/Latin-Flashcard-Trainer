@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const capitalToMacron = {
-        'A': 'ā', 'E': 'ē', 'I': 'ī', 'O': 'ō', 'U': 'ū'
+        'A': 'Ā', 'E': 'Ē', 'I': 'Ī', 'O': 'Ō', 'U': 'Ū'
     };
 
     function addMacronSupport(inputElement) {
