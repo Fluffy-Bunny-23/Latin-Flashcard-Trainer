@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
         document.body.classList.add('dark-mode');
-        darkModeToggle.textContent = '☀️';
+        darkModeToggle.textContent = '☀';
     }
 
     darkModeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         const isNowDark = document.body.classList.contains('dark-mode');
-        darkModeToggle.textContent = isNowDark ? '☀️' : '🌙';
+        darkModeToggle.textContent = isNowDark ? '☀' : '🌙';
         localStorage.setItem('darkMode', isNowDark);
     });
 
