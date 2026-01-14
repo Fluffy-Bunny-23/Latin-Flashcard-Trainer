@@ -20,8 +20,38 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     let score = 0;
     let lastFocusedInput = null;
+    let userProgress = {};
 
     console.log("Script loaded and DOM content ready.");
+
+    function loadProgress() {
+        const saved = localStorage.getItem('latinFlashcardProgress');
+        if (saved) {
+            try {
+                userProgress = JSON.parse(saved);
+            } catch (e) {
+                console.error("Failed to parse progress:", e);
+                userProgress = {};
+            }
+        }
+    }
+
+    function saveProgress() {
+        localStorage.setItem('latinFlashcardProgress', JSON.stringify(userProgress));
+    }
+
+    function updateWordProgress(wordKey, isCorrect) {
+        if (!userProgress[wordKey]) {
+            userProgress[wordKey] = { attempts: 0, correct: 0 };
+        }
+        userProgress[wordKey].attempts++;
+        if (isCorrect) {
+            userProgress[wordKey].correct++;
+        }
+        saveProgress();
+    }
+
+    loadProgress();
 
     function showToast(message, duration = 3000) {
         const toast = document.getElementById('toast');
@@ -340,9 +370,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isCorrect) {
             score++;
+            updateWordProgress(`${currentChapterWords[currentIndex].latin}_${currentChapterWords[currentIndex].translation}`, true);
             feedbackArea.classList.add('correct');
             feedbackMessage.textContent = "Correct!";
         } else {
+            updateWordProgress(`${currentChapterWords[currentIndex].latin}_${currentChapterWords[currentIndex].translation}`, false);
             feedbackArea.classList.add('incorrect');
             let msg = "Incorrect. ";
             if (!allPartsCorrect) msg += `Check Latin Part(s): ${incorrectIndices.join(', ')}. `;
