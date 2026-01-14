@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const capitalToMacron = {
-        'A': 'Ā', 'E': 'Ē', 'I': 'Ī', 'O': 'Ō', 'U': 'Ū'
+        'A': 'ā', 'E': 'ē', 'I': 'ī', 'O': 'ō', 'U': 'ū'
     };
 
     function addMacronSupport(inputElement) {
