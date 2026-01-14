@@ -11,44 +11,45 @@
         <h1>Latin Flashcard Trainer</h1>
         
         <div id="setup-area">
-            <div id="loading-indicator" style="display: block;">
+            <div id="loading-indicator" style="display: block;" aria-live="polite" role="status">
                 <p>Loading vocabulary data...</p>
             </div>
             <div id="setup-content" style="display: none;">
                 <p>Select a chapter to begin practicing your vocabulary.</p>
                 <div class="input-group" style="margin-bottom: 20px;">
-                    <select id="chapter-select" style="width: 100%;">
+                    <label for="chapter-select" id="chapter-select-label">Select Chapter</label>
+                    <select id="chapter-select" style="width: 100%;" aria-labelledby="chapter-select-label">
                         <option value="">-- Choose a Chapter --</option>
                     </select>
                 </div>
-                <button id="start-btn" style="width: 100%;">Start Quiz</button>
+                <button id="start-btn" style="width: 100%;" aria-label="Start Quiz">Start Quiz</button>
             </div>
         </div>
 
-        <div id="quiz-area" class="quiz-area hidden">
-            <div class="progress-container">
+        <div id="quiz-area" class="quiz-area hidden" role="main" aria-live="polite">
+            <div class="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                 <div id="progress-bar" class="progress-bar"></div>
             </div>
-            <div id="progress-text" style="margin-bottom: 10px; font-size: 0.9em; color: #666;"></div>
+            <div id="progress-text" style="margin-bottom: 10px; font-size: 0.9em; color: #666;" aria-live="polite"></div>
 
-            <div class="question-box">
+            <div class="question-box" role="region" aria-label="Question">
                 <div style="font-size: 0.6em; text-transform: uppercase; color: #7f8c8d; margin-bottom: 5px;">Translate to Latin</div>
-                <span id="question-text">Loading...</span>
+                <span id="question-text" aria-live="assertive">Loading...</span>
             </div>
 
             <div class="input-group">
-                <label>Latin Principal Parts:</label>
-                <div class="macron-buttons">
-                    <button class="macron-btn" tabindex="-1">ā</button>
-                    <button class="macron-btn" tabindex="-1">ē</button>
-                    <button class="macron-btn" tabindex="-1">ī</button>
-                    <button class="macron-btn" tabindex="-1">ō</button>
-                    <button class="macron-btn" tabindex="-1">ū</button>
+                <label id="latin-parts-label">Latin Principal Parts:</label>
+                <div class="macron-buttons" role="group" aria-label="Macron buttons">
+                    <button class="macron-btn" tabindex="-1" aria-label="Add letter a with macron">ā</button>
+                    <button class="macron-btn" tabindex="-1" aria-label="Add letter e with macron">ē</button>
+                    <button class="macron-btn" tabindex="-1" aria-label="Add letter i with macron">ī</button>
+                    <button class="macron-btn" tabindex="-1" aria-label="Add letter o with macron">ō</button>
+                    <button class="macron-btn" tabindex="-1" aria-label="Add letter u with macron">ū</button>
                 </div>
-                <div id="latin-inputs-container"></div>
-                
-                <label for="gender-select" style="margin-top: 10px;">Gender:</label>
-                <select id="gender-select">
+                <div id="latin-inputs-container" role="group" aria-labelledby="latin-parts-label"></div>
+
+                <label for="gender-select" id="gender-label" style="margin-top: 10px;">Gender:</label>
+                <select id="gender-select" aria-labelledby="gender-label">
                     <option value="">-- Select --</option>
                     <option value="m.">Masculine (m.)</option>
                     <option value="f.">Feminine (f.)</option>
@@ -61,8 +62,8 @@
                     <option value="none">N/A (None)</option>
                 </select>
 
-                <label for="pos-select">Part of Speech:</label>
-                <select id="pos-select">
+                <label for="pos-select" id="pos-label">Part of Speech:</label>
+                <select id="pos-select" aria-labelledby="pos-label">
                     <option value="">-- Select --</option>
                     <option value="noun">Noun</option>
                     <option value="verb">Verb</option>
@@ -75,12 +76,12 @@
                 </select>
             </div>
 
-            <div class="controls" style="margin-top: 20px;">
-                <button id="check-btn" style="width: 100%;">Check Answer</button>
-                <button id="next-btn" style="display: none; width: 100%;">Next Word</button>
+            <div class="controls" style="margin-top: 20px;" role="group" aria-label="Quiz controls">
+                <button id="check-btn" style="width: 100%;" aria-label="Check your answer">Check Answer</button>
+                <button id="next-btn" style="display: none; width: 100%;" aria-label="Go to next word">Next Word</button>
             </div>
 
-            <div id="feedback-area" class="feedback">
+            <div id="feedback-area" class="feedback" role="alert" aria-live="assertive">
                 <div id="feedback-message" style="font-weight: bold; font-size: 1.1em;"></div>
                 <div id="full-entry-display" class="full-entry"></div>
             </div>
