@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>Your Score: ${score} / ${currentChapterWords.length}</p>
             <div style="margin-top: 20px;">
                 <button id="retry-btn">Try Again</button>
-                <button onclick="location.reload()" style="margin-left: 10px; background-color: #7f8c8d;">Back to Menu</button>
+                <button id="back-to-menu-btn" style="margin-left: 10px; background-color: #7f8c8d;">Back to Menu</button>
             </div>
         `;
         results.style.display = 'block';
@@ -406,13 +406,25 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.question-box').style.display = 'block';
             document.querySelector('.input-group').style.display = 'flex';
             document.querySelector('.controls').style.display = 'flex';
-            
+
             // Reset state
             currentChapterWords.sort(() => Math.random() - 0.5);
             currentIndex = 0;
             score = 0;
             updateProgress();
             showCard();
+        };
+
+        document.getElementById('back-to-menu-btn').onclick = () => {
+            results.style.display = 'none';
+            // Hide game elements
+            quizArea.style.display = 'none';
+            // Show setup area
+            setupArea.classList.remove('hidden');
+            // Reset state
+            currentChapterWords = [];
+            currentIndex = 0;
+            score = 0;
         };
     }
 });
