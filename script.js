@@ -235,6 +235,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const userGender = genderSelect.value;
         const userPos = posSelect.value;
 
+        if (checkBtn.disabled) return;
+
         // Validate that user has provided input
         const userInputs = document.querySelectorAll('.latin-part-input');
         let hasAnyInput = false;
@@ -356,6 +358,26 @@ document.addEventListener('DOMContentLoaded', () => {
     nextBtn.addEventListener('click', () => {
         currentIndex++;
         showCard();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (setupArea.classList.contains('hidden')) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                if (checkBtn.style.display !== 'none' && !checkBtn.disabled) {
+                    e.preventDefault();
+                    checkBtn.click();
+                } else if (nextBtn.style.display !== 'none') {
+                    e.preventDefault();
+                    nextBtn.click();
+                }
+            }
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                if (results.style.display === 'block') {
+                    document.getElementById('back-to-menu-btn').click();
+                }
+            }
+        }
     });
 
     function updateProgress() {
