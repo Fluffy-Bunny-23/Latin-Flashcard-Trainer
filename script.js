@@ -23,6 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     console.log("Script loaded and DOM content ready.");
 
+    function showToast(message, duration = 3000) {
+        const toast = document.getElementById('toast');
+        if (!toast) return;
+        toast.textContent = message;
+        toast.className = 'toast show';
+        setTimeout(() => {
+            toast.className = 'toast';
+        }, duration);
+    }
+
     // Dark Mode Toggle
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
     if (isDarkMode) {
@@ -164,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startBtn.addEventListener('click', () => {
         const chapterIndex = chapterSelect.value;
         if (chapterIndex === "") {
-            alert("Please select a chapter before starting the quiz.");
+            showToast("Please select a chapter before starting the quiz.");
             return;
         }
         
