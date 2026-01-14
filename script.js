@@ -81,6 +81,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const setupContent = document.getElementById('setup-content');
     const loadingIndicator = document.getElementById('loading-indicator');
 
+    wordsData.forEach((chapter, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = chapter.chapter || `Chapter ${index + 1}`;
+        chapterSelect.appendChild(option);
+    });
+
+    // Add "All Chapters" option
+    const allChaptersOption = document.createElement('option');
+    allChaptersOption.value = 'all';
+    allChaptersOption.textContent = 'All Chapters (Combined)';
+    allChaptersOption.style.fontWeight = 'bold';
+    chapterSelect.insertBefore(allChaptersOption, chapterSelect.firstChild.nextElementSibling);
+
     if (typeof wordsData === 'undefined' || !Array.isArray(wordsData) || wordsData.length === 0) {
         console.error("wordsData is undefined, empty, or not an array. Check if data.js is loaded correctly.");
         loadingIndicator.style.display = 'none';
@@ -207,8 +221,15 @@ document.addEventListener('DOMContentLoaded', () => {
             showToast("Please select a chapter before starting the quiz.");
             return;
         }
-        
-        currentChapterWords = [...wordsData[chapterIndex].words];
+
+        if (chapterIndex === 'all') {
+            currentChapterWords = [];
+            wordsData.forEach(chapter => {
+                currentChapterWords.push(...chapter.words);
+            });
+        } else {
+            currentChapterWords = [...wordsData[chapterIndex].words];
+        }
         currentChapterWords.sort(() => Math.random() - 0.5);
 
         currentIndex = 0;
