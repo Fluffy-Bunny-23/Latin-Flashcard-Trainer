@@ -38,12 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initialize Chapters
+    const setupContent = document.getElementById('setup-content');
+    const loadingIndicator = document.getElementById('loading-indicator');
+
     if (typeof wordsData === 'undefined' || !Array.isArray(wordsData) || wordsData.length === 0) {
         console.error("wordsData is undefined, empty, or not an array. Check if data.js is loaded correctly.");
-        questionText.textContent = "Error: Failed to load vocabulary data. Please refresh the page.";
+        loadingIndicator.style.display = 'none';
+        setupContent.style.display = 'block';
+        setupContent.innerHTML = `
+            <p style="color: #e74c3c; font-weight: bold;">Error: Failed to load vocabulary data.</p>
+            <p>Please try the following:</p>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Refresh the page</li>
+                <li>Check your internet connection</li>
+                <li>Contact support if the issue persists</li>
+            </ul>
+        `;
         startBtn.disabled = true;
         return;
     }
+
+    loadingIndicator.style.display = 'none';
+    setupContent.style.display = 'block';
 
     wordsData.forEach((chapter, index) => {
         const option = document.createElement('option');

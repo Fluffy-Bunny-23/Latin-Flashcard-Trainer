@@ -11,13 +11,18 @@
         <h1>Latin Flashcard Trainer</h1>
         
         <div id="setup-area">
-            <p>Select a chapter to begin practicing your vocabulary.</p>
-            <div class="input-group" style="margin-bottom: 20px;">
-                <select id="chapter-select" style="width: 100%;">
-                    <option value="">-- Choose a Chapter --</option>
-                </select>
+            <div id="loading-indicator" style="display: block;">
+                <p>Loading vocabulary data...</p>
             </div>
-            <button id="start-btn" style="width: 100%;">Start Quiz</button>
+            <div id="setup-content" style="display: none;">
+                <p>Select a chapter to begin practicing your vocabulary.</p>
+                <div class="input-group" style="margin-bottom: 20px;">
+                    <select id="chapter-select" style="width: 100%;">
+                        <option value="">-- Choose a Chapter --</option>
+                    </select>
+                </div>
+                <button id="start-btn" style="width: 100%;">Start Quiz</button>
+            </div>
         </div>
 
         <div id="quiz-area" class="quiz-area hidden">
