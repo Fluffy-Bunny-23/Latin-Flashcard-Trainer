@@ -230,5 +230,83 @@ body.dark-mode .full-entry {
 }
 
 body.dark-mode #progress-text {
-    color: #aaa;
+        color: #aaa;
+    }
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .question-box {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    .macron-buttons {
+        gap: 3px;
+    }
+
+    .macron-btn {
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .controls button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dark-mode-toggle {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
 }
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .question-box {
+        font-size: 1rem;
+    }
+
+    .macron-btn {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+
+    .input-group {
+        gap: 8px;
+    }
+
+    label {
+        font-size: 0.85em;
+    }
+}
+
